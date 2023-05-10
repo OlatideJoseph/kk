@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
+	<script type="text/javascript" src="{% static 'js/jquery-3.6.3.min.js' %}"></script>
+	{% block head %}
+	{% endblock %}
+</head>
+<body>
+	<nav id="nav" class="base-nav">
+		<span id="nav-header" class="nav-header">
+			KapitalKitchen
+		</span>
+		<ul id='nav-content'>
+
+			<li>
+				<a href="">Home</a>
+			</li>
+			<li>
+				<a href="">Order</a>
+			</li>
+			<li>
+				<a href="">Contact-Us</a>
+			</li>
+			<li>
+				<a href="">Locations</a>
+			</li>
+			
+		</ul>
+		
+	</nav>
+	<section id="main-section" class="content-section">
+		{% block content %}
+		{% endblock %}
+
+	</section>
+</body>
+</html>

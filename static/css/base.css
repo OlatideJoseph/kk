@@ -1,0 +1,32 @@
+*{
+	font-family: Arial;
+	margin:0;
+	padding: 0;
+}
+.base-nav{
+	background: #ef2727;
+	color: white;
+	position: sticky;
+	padding: 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+#nav-content{
+	list-style-type: none;
+	font-size: 14px;
+}
+#nav-content li{
+	display: inline;
+	padding-top:3px;
+}
+#nav-content>li>a{
+	text-decoration: none;
+	color:#ffd60d;
+}
+.nav-header{
+	font-size: 24px;
+}
+.content-section{
+	padding: 12px 10px;
+}
