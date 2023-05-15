@@ -1,7 +1,22 @@
 {% extends '_base.html' %}
+{% load static %}
 {% block head %}
     <title>Kapital | Kitchen | Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pages/home.css/' %}">
 {% endblock %}
 {% block content %}
-    <h2>Kapital-Kitchen</h2>
+    <h2>
+        Order Your Food Now
+    </h2>
+    <section class="land-page">
+        <div class="foods-group">
+            {% for food in foods%}
+                <div class="food-group-item">
+                    <img src="media/{{food.image}}" alt="{{food.name}}">
+                    <small style="color:green;">{{food.price}}</small>
+                    <span>{{food.name}}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 {% endblock %}

@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Code+Pro:wght@300&display=swap');
 *{
-	font-family: Arial;
+	font-family: 'Poppins',sans-serif;
 	margin:0;
 	padding: 0;
 }
@@ -11,18 +12,28 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	transition: box-shadow .3s;
+
+}
+.nav-extended{
+	box-shadow: 0 5px 10px #000;
 }
 #nav-content{
 	list-style-type: none;
 	font-size: 14px;
+	padding-top: 4px;
 }
 #nav-content li{
 	display: inline;
 	padding-top:3px;
 }
-#nav-content>li>a{
+#nav-content li a{
 	text-decoration: none;
-	color:#ffd60d;
+	font-family: 'sans-serif',monospace;
+	transition: 1s ease;
+}
+#nav-content li a:hover{
+	border-bottom: 2px solid #ffd60d;
 }
 .nav-header{
 	font-size: 24px;
