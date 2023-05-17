@@ -4,7 +4,7 @@ from django.db import models
 
 class Food(models.Model):
     name = models.CharField(max_length=100)
-    ftype = models.CharField(max_length=100)
+    ftype = models.CharField(max_length=100,null=True)
     quantity_avail = models.PositiveIntegerField()
     image=models.ImageField(default='default.jpg',upload_to='foods/')
     price = models.FloatField(blank=True, null=True)

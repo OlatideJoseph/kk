@@ -45,3 +45,9 @@
 .content-section{
 	padding: 12px 10px;
 }
+.page-footer{
+	width: 100%;
+	height: auto;
+	background-color: aliceblue;
+	padding: 12px;
+}

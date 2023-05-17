@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
-	<script src="{% static 'js/fontawesomelocal-kit.js' %}" crossorigin="anonymous"></script>
+	<script src="{% static 'js/fontawesomelocal-kit.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/jquery-3.6.3.min.js' %}"></script>
 	{% block head %}
 	{% endblock %}
@@ -21,7 +21,7 @@
 				<a href="">Home</a>
 			</li>
 			<li>
-				<a href="">Order</a>
+				<a href="#order">Order</a>
 			</li>
 			<li>
 				<a href="">Contact-Us</a>
@@ -38,9 +38,24 @@
 		{% endblock %}
 
 	</section>
-	<footer>
+	<footer id="footer" class="page-footer">
+		<div class="test-header">
+			<h3>Contact Us</h3>
+			<blockquote class="links">
+				<small>Mail Us</small>
+				<a href="mailto:testemail.ng">kapitalkitchen@gmail.com</a><br>
+				<small>Send Message</small>
+				<a href="#sendmsg">send message</a><br>
+				<small>Complain</small>
+				<a href="#complains">
+					Make A Complain
+				</a><br>
+				<small> Check and make</small>
+				<a href="#reviews">Reviews</a>
+			</blockquote>
+		</div>
 		<span>
-			&copy; 2023 Kapital Kitchen Resturant
+			&copy; 2023 Kapital Kitchen Restaurant
 		</span>
 	</footer>
 	<script type="text/javascript" src="{% static 'js/base.js'%}"></script>
