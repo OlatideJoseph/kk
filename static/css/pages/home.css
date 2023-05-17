@@ -1,23 +1,138 @@
 .land-page{
+	display: flex;
+	flex-direction: column;
+	background-color: #0001;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+h1{
+	font-size: 30px;
+}
+h2{
+	color: #ffd60d;
+	position: relative;
+	margin-bottom: 12px;
+}
+h2::after{
+	content: "";
+	width: 15px;
+	position: absolute;
+	height: 7px;
+}
+.foods-group::-webkit-scrollbar{
+	width: 50px;
+	background-color: #ff000070;
+	/*display: none;*/
+	border-radius: 5px;
+}
+.foods-group::-webkit-scrollbar-thumb{
+	background-color: #27efef;
+	border-radius: 5px;
+}
+.foods-group{
 	overflow-x: scroll;
 	overflow-y: hidden;
 	color: #ffd60d;
-}
-.foods-group{
+	padding: 12px;
 	display: flex;
-	flex-wrap: nowrap ;
-	flex-direction: row;
+	flex-basis: auto;
 	justify-content: space-between;
-	align-items: flex-start;
+	
+}
+.striking-hero-image img{
+	height: 50ch;
+	object-fit:  cover;
+	width: 100%;
+	border-radius: 10px;
+	position: relative;
+	z-index: -1;
+	transition: opacity .3s;
+
+}
+.striking-hero-image img:hover{
+	opacity: .7;
+}
+.striking-header{
+	z-index: -1;
+	position: relative;
+	font-weight: 200px;
+	font-size: 24px;
 }
 .food-group-item{
+	width: 100px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 
 }
+.food-placeholder{
+	box-shadow: 0 -1px 5px 2px #00000075;
+	margin-right: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	display: flex;
+	width: 100px;
+	flex-direction: row-reverse;
+	padding: 10px;
+	max-height: 150px;
+}
+.icon-plus{
+
+}
+.icon-btn{
+	font-size: 12px;
+	display: inline;
+	float: right;
+	height: 15px;
+	box-shadow: 0 -1px 3px 2px #00000075;
+	padding: 5px;
+	border-radius: 3px;
+	background-color: gold;
+}
 .food-group-item img{
 	width:50px;
 	border-radius: 10px;
 	height: 50px;
+}
+.price-tag{
+	font-size: 12px;
+}
+#about-section {
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-section::before {
+  content: "";
+  background-image: url('/static/images/thomas-tucker-MNtag_eXMKw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5); /* Decrease the brightness level (adjust value as needed) */
+  z-index: -1;
+}
+#about-section p{
+	color: #fff;
+}
+#Kapital{
+	background-image: url('/static/images/kitchen-image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40vh;
+	color: grey;
+	background-position: cover;
+	padding: 5px;
+}
+#Kapital h1{
+	color: #ef2727;
 }

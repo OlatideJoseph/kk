@@ -12,11 +12,13 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	transition: box-shadow .3s;
+	transition: box-shadow .7s ease-in-out;
 
 }
 .nav-extended{
 	box-shadow: 0 5px 10px #000;
+	position: sticky;
+	top: 0;
 }
 #nav-content{
 	list-style-type: none;
@@ -24,15 +26,17 @@
 	padding-top: 4px;
 }
 #nav-content li{
+	color: #ffd60d;
 	display: inline;
 	padding-top:3px;
 }
 #nav-content li a{
 	text-decoration: none;
 	font-family: 'sans-serif',monospace;
-	transition: 1s ease;
+	transition: color 1s ease;
+	color: #ffd60d;
 }
-#nav-content li a:hover{
+#nav-content ul li a:hover{
 	border-bottom: 2px solid #ffd60d;
 }
 .nav-header{
