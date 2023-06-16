@@ -45,6 +45,9 @@ h2{
 	display: none;
 	border-radius: 5px;
 }
+#catchy-text{
+	margin-top: 4px;
+}
 .foods-group::-webkit-scrollbar-thumb{
 	background-color: #27efef;
 	border-radius: 5px;
@@ -59,18 +62,21 @@ h2{
 	justify-content: space-between;
 	
 }
+.striking-hero-image{
+	padding: 12px;
+}
 .striking-hero-image img{
-	height: 50ch;
+	height: 100%;
 	object-fit:  cover;
 	width: 100%;
 	border-radius: 5px;
 	position: relative;
-	z-index: -1;
-	transition: opacity .3s;
+	transition: opacity .5s transform .3s;
 
 }
 .striking-hero-image img:hover{
-	opacity: .7;
+	opacity: .9;
+	transform: scale(1.1);
 }
 .striking-header{
 	z-index: -1;
@@ -81,17 +87,20 @@ h2{
 .food-group-item{
 	width: 100px;
 	display: flex;
+	cursor: pointer;
 	color: #000;
 	align-items: center;
 	flex-direction: column;
 
 }
+
 .food-placeholder{
 	margin-right: 15px;
 	background-color: #fff;
 	border-radius: 5px;
 	display: flex;
 	width: 100px;
+	cursor: pointer;
 	flex-direction: row-reverse;
 	padding: 10px;
 	max-height: 150px;
@@ -100,12 +109,15 @@ h2{
 .food-placeholder:hover{
 	box-shadow: 0 -1px 5px 2px #00000075;
 }
+/*
 .icon-plus{
 
 }
+*/
 .icon-btn{
 	font-size: 12px;
 	display: inline;
+	cursor: grab;
 	float: right;
 	height: 15px;
 	box-shadow: 0 -1px 3px 2px #00000075;
@@ -119,7 +131,9 @@ h2{
 	height: 50px;
 }
 .price-tag{
+	margin:5px;
 	font-size: 12px;
+	color: var(--page-red);
 }
 #about-section {
   margin-top: 15px;
@@ -164,4 +178,14 @@ h2{
 	color: #ef2727;
 	border-bottom: 6px solid #ef2727;
 	padding-bottom:4px ;
+}
+/* Media queries */
+@media (min-width:540px){
+	.foods-group{
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 5px;
+		overflow-x: noscroll;
+		overflow-y: visible;
+	}
 }

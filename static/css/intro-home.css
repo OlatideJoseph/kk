@@ -1,0 +1,34 @@
+section{
+	font-size: 24px;
+	padding: 16px;
+	font-family: 'Source code pro',monospace;
+}
+#intro{
+	background-image: linear-gradient(to top,var(--page-yellow),var(--page-red));
+	height: auto !important;
+}
+section p{
+	display: block;
+}
+section button{
+	padding: 8px;
+	outline: none;
+	cursor: pointer;
+	font-family:'Cedarville Cursive', cursive;
+	background: black;
+	font-size: 15px;
+	font-weight: 24px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-top:5px ;
+	transition: .8s ease-in-out;
+}
+section button i{
+	transition: .3s ease-in-out;
+	position: relative;
+	margin-top: 5px;
+}
+section button:hover i{
+	transform: translateX(50%);
+}

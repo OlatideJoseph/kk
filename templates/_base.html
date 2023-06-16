@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
 	<script src="{% static 'js/fontawesomelocal-kit.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/jquery-3.6.3.min.js' %}"></script>
@@ -18,10 +18,13 @@
 		<ul id='nav-content'>
 
 			<li>
-				<a href="">Home</a>
+				<a href="">
+					<i class="fa-light fa-house-blank" style="display: inline;"></i>
+				</a>
+				<i class="fa-light fa-house-blank" style="display: inline;"></i>
 			</li>
 			<li>
-				<a href="#order">Order</a>
+				<a href="#order">Explore</a>
 			</li>
 			<li>
 				<a href="">Contact-Us</a>
@@ -39,24 +42,26 @@
 
 	</section>
 	<footer id="footer" class="page-footer">
-		<div class="test-header">
+		<div id="contact" class="test-header">
 			<h3>Contact Us</h3>
-			<blockquote class="links">
-				<small>Mail Us</small>
-				<a href="mailto:testemail.ng">kapitalkitchen@gmail.com</a><br>
-				<small>Send Message</small>
+			<div class="links">
+				<header>Mail Us</header>
+				<a href="mailto:kapitalkitchenng@gmail.com">Kapital Kitchen</a><br>
+				<header>Send Message</header>
 				<a href="#sendmsg">send message</a><br>
-				<small>Complain</small>
+				<header>Complain</header>
 				<a href="#complains">
 					Make A Complain
 				</a><br>
-				<small> Check and make</small>
+				<header> Check and make</header>
 				<a href="#reviews">Reviews</a>
-			</blockquote>
+			</div>
 		</div>
-		<span>
-			&copy; 2023 Kapital Kitchen Restaurant
-		</span>
+		<div id="idc">
+			<span>
+				Copyrights &copy; | 2023 Kapital Kitchen Restaurant
+			</span>
+		</div>
 	</footer>
 	<script type="text/javascript" src="{% static 'js/base.js'%}"></script>
 </body>

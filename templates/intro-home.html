@@ -1,0 +1,32 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block head %}
+    <title>Kapital Kitchen | Intro</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/intro-home.css'%}">
+{% endblock %}
+{% block content %}
+    <section id="intro" class="intro">
+        <p>
+        Welcome to Kapital Kitchen, where extraordinary dining experiences await. Discover a symphony of flavors with our carefully crafted menu, showcasing culinary excellence. Indulge in tantalizing creations made from the freshest, locally sourced ingredients. Immerse yourself in an inviting ambiance, perfect for any occasion. Our passionate team of chefs will take you on a culinary journey like no other. From the first bite to the last, our dedicated staff ensures impeccable service, making your visit truly memorable. Reserve your table now and savor the exceptional at Kapital Kitchen. Come, experience gastronomic delights beyond compare.
+    </p>
+        <button class="e-btn">
+         Explore for more <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </section>
+
+    <!--section id="about-us" class="about">
+        
+    </section-->
+    <script type="text/javascript">
+        /*
+         *   let arrow=document.querySelector('.fa-arrow-right');
+         *  let btn=document.querySelector('.e-btn');
+         *  btn.addEventListener('mouseover',()=>{
+         *      arrow.style.display='inline';
+         *  });
+         *  btn.addEventListener('mouseleave',()=>{
+         *      arrow.style.display='none';
+         *  });
+        */
+    </script>
+{% endblock %}
