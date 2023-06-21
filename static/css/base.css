@@ -6,6 +6,7 @@
 	padding: 0;
 }
 :root{
+	--page-black:#bdb76b;
 	--page-yellow:#ffd60d;
 	--page-red:#ef2727;
 	--page-black:black;
@@ -60,7 +61,7 @@ section:nth-child(1){
 }
 .page-footer{
 	height: auto;
-	background-color:#000;
+	background-color:var(--page-black);
 	padding: 12px;
 }
 .links a{

@@ -96,8 +96,8 @@ h2{
 
 .food-placeholder{
 	margin-right: 15px;
-	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 33px;
+	background: linear-gradient(225deg, #e6e6e6, #ffffff);
 	display: flex;
 	width: 100px;
 	cursor: pointer;
@@ -107,7 +107,8 @@ h2{
 	transition: box-shadow .1s ;
 }
 .food-placeholder:hover{
-	box-shadow: 0 -1px 5px 2px #00000075;
+		box-shadow:  -9px 9px 18px #adadad,
+             9px -9px 18px #ffffff;
 }
 /*
 .icon-plus{

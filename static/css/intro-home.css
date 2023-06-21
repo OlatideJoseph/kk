@@ -4,8 +4,12 @@ section{
 	font-family: 'Source code pro',monospace;
 }
 #intro{
-	background-image: linear-gradient(to top,var(--page-yellow),var(--page-red));
+	background-image: white;
 	height: auto !important;
+	border-radius: 5px;
+	background: linear-gradient(225deg, #e6e6e6, #ffffff);
+	box-shadow:  -16px 16px 32px #adadad,
+             16px -16px 32px #ffffff;
 }
 section p{
 	display: block;
@@ -25,7 +29,7 @@ section button{
 	transition: .8s ease-in-out;
 }
 section button i{
-	transition: .3s ease-in-out;
+	transition: .2s ease-in-out;
 	position: relative;
 	margin-top: 5px;
 }
