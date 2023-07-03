@@ -1,0 +1,113 @@
+section{
+	font-size: 18px;
+	padding: 10px;
+	background: linear-gradient(225deg, #e6e6e6, #ffffff);
+	font-family: 'Source code pro',monospace;
+}
+h2{
+	border-bottom: 2px solid;
+	margin-bottom: 15px;
+}
+#intro{
+	min-height: 250px;
+	box-shadow:  -1px -2px 20px 0px #0c0c0c,
+			 16px -16px 32px #0e0e0e;
+	border-radius: 5px;
+}
+.img-text{
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	display: flex;
+	max-width: 1080px;
+	padding: 8px;
+	margin-bottom: 8px;
+	justify-content: space-between;
+}
+/*paragraph*/
+.img-text p{
+	margin-top: 5px;
+}
+.blazing-fire-img{
+	display: inline;
+	margin-bottom: 20px;
+	width: 250px;
+	height: auto;
+	transition: ease-in;
+	margin: 20px;
+	/*animation-delay: .8s;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-name: blazing-image;*/
+	border-radius: 20px;
+	box-shadow:  -16px 16px 32px #0c0c0c,
+				 16px -16px 32px #0e0e0e;
+}
+.about-content{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.abt-img-1{
+	border-radius: 10px;
+}
+.abt-img-2{
+	border-radius: 10px;
+}
+section button{
+	padding: 15px;
+	outline: none;
+	cursor: pointer;
+	font-family:'Cedarville Cursive', cursive;
+	background: black;
+	font-size: 15px;
+	font-weight: 24px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-top:15px;
+	display: inline;
+	float: right;
+	transition: .8s ease-in-out;
+}
+section button i{
+	transition: .2s ease-in-out;
+	position: relative;
+	margin-top: 5px;
+}
+section button:hover i{
+	transform: translateX(50%);
+}
+/* keyframes animation */
+@keyframes blazing-image{
+	0%{
+		margin-top: 0;
+	}
+	25%{
+		margin-top: 10px;
+	}
+	50%{
+		margin-top: 15px;
+	}
+	75%{
+		margin-bottom: 10px;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+@media screen and (max-width:500px){
+	.img-text{
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	#intro{
+		height: auto;
+	}
+	.blazing-fire-img{
+		animation:none;
+		box-shadow: 1px -1px 0px 0px #0c0c0c,
+		 2px 14px 32px #0e0e0e;
+	}
+}

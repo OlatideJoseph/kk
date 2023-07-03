@@ -1,0 +1,74 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block head %}
+    <title>Kapital Kitchen | Intro</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/intro-home.css'%}">
+{% endblock %}
+{% block content %}
+    <section id="intro" class="intro">
+       <center> <h2>Welcome Kapital Epicurean's</h2></center>
+        <div class="img-text">
+            <img class=" blazing-fire-img" src="{% static 'images/blazing-fire-unsplash.jpg'%}" alt="blazing-fire">
+                <p>
+                Welcome to Kapital Kitchen, where extraordinary dining experiences await. Discover a symphony of flavors with our carefully crafted menu, showcasing culinary excellence. Indulge in tantalizing creations made from the freshest, locally sourced ingredients. Immerse yourself in an inviting ambiance, perfect for any occasion. Our passionate team of chefs will take you on a culinary journey like no other. From the first bite to the last, our dedicated staff ensures impeccable service, making your visit truly memorable. Reserve your table now and savor the exceptional at Kapital Kitchen. Come, experience gastronomic delights beyond compare.
+            </p>
+        </div>
+        <button type="button" class="e-btn">
+         Explore for more <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </section>
+    <section>
+       <center> <h2>About Us</h2></center>
+       <div class="about-content">
+           <pre>
+            <span>
+            <strong> Here is a poem: </strong>
+           </span>
+                Kapital Kitchen is the place to be,
+                Where foodies come to dine and see,
+                The best of what the world can offer,
+                And taste the flavors that make them suffer.
+
+                From appetizers to desserts,
+                Kapital Kitchen never hurts,
+                To satisfy your cravings and needs,
+                And make you forget about your deeds.
+
+                The ambiance is warm and cozy,
+                The staff is friendly and not nosy,
+                They'll make you feel right at home,
+                And never leave you feeling alone.
+
+                So come on down and give it a try,
+                You won't regret it, we won't lie,
+                Kapital Kitchen is the place to be,
+                Where foodies come to dine and see.
+
+           </pre>
+           <div class="about-images">
+                <img src="{%static 'images/victoria-shes-unsplash.jpg'%}" class="abt-img-1" height="450">
+                <img src="{% static 'images/fried-rice.jpg' %}" class="abt-img-2" height="450">   
+           </div>    
+       </div>
+       
+        
+    </section>
+
+    <!--section id="about-us" class="about">
+        
+    </section-->
+    <script type="text/javascript">
+        /*
+         *   let arrow=document.querySelector('.fa-arrow-right');
+         *  let btn=document.querySelector('.e-btn');
+         *  btn.addEventListener('mouseover',()=>{
+         *      arrow.style.display='inline';
+         *  });
+         *  btn.addEventListener('mouseleave',()=>{
+         *      arrow.style.display='none';
+         *  });
+        */
+        let scrollReveal=ScrollReveal();
+        scrollReveal.reveal('.intro');
+    </script>
+{% endblock %}

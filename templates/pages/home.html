@@ -1,0 +1,48 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block head %}
+    <title>Kapital | Kitchen | Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pages/home.css/' %}">
+{% endblock %}
+{% block content %}
+    <section class="striking-hero-image">
+        <!--header class="striking-header">Noodles on Fire: Ignite Your Palate with Fiery Pan-Fried Delights</header-->
+        <img src="{% static '/images/striking-hero.jpg' %}" alt="noodles-in-pot">
+        
+    </section>
+    <section id="Kapital">
+            <h1>
+                Kapital Kitchen: <span >Home Of Foods</span>
+            </h1>
+        <p id="catchy-text">Indulge in Exquisite Flavors and Unforgettable Dining:<wbr> Welcome to a Gastronomic Journey Like No Other!</p>
+    </section>
+    <section class="land-page">
+        <header> 
+            <h2 id="order">
+                Order Your Food Now
+            </h2>
+            <p>You can check the varieties of available foods orders</p>
+        </header>
+        <div class="foods-group">
+            {% for food in foods%}
+                <div class="food-placeholder">
+                    <span class="add icon-btn">
+                        <i class="fa-solid fa-plus fa-bounce" style="color: #080808;"></i>
+                    </span>
+                    <div class="food-group-item">
+                        <img src="{%get_media_prefix%}{{food.image}}" alt="{{food.name}}">
+                        <small class="price-tag"> Price: &#8358;{{food.price |floatformat}}</small>
+                        <small>{{food.name}}</small>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="about-section">
+        <h2>About our Food</h2>
+        <p>
+        Welcome to Kapital Kitchen, where culinary excellence meets social responsibility. We combine delectable cuisine with a commitment to sustainability and community impact. Our vibrant restaurants serve fresh, locally sourced ingredients transformed into mouthwatering dishes. With a focus on reducing waste and supporting local initiatives, dining at Kapital Kitchen means indulging with purpose. Join us for a memorable dining experience where great food meets greater purpose.</p>
+        
+    </section>
+{% endblock %}
