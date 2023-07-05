@@ -10,8 +10,8 @@ h2{
 }
 #intro{
 	min-height: 250px;
-	box-shadow:  -1px -2px 20px 0px #0c0c0c,
-			 16px -16px 32px #0e0e0e;
+	box-shadow:-1px -2px 20px 0px #0c0c0c,
+	 0px -1px 15px #0e0e0e;
 	border-radius: 5px;
 }
 .img-text{
@@ -66,9 +66,7 @@ section button{
 	color: white;
 	border: none;
 	border-radius: 5px;
-	margin-top:15px;
 	display: inline;
-	float: right;
 	transition: .8s ease-in-out;
 }
 section button i{
@@ -100,12 +98,13 @@ section button:hover i{
 @media screen and (max-width:500px){
 	.img-text{
 		flex-wrap: wrap;
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 	#intro{
 		height: auto;
 	}
 	.blazing-fire-img{
+		width: auto;
 		animation:none;
 		box-shadow: 1px -1px 0px 0px #0c0c0c,
 		 2px 14px 32px #0e0e0e;
