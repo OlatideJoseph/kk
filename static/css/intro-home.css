@@ -1,5 +1,6 @@
 section{
 	font-size: 18px;
+	height: auto;
 	padding: 10px;
 	background: linear-gradient(225deg, #e6e6e6, #ffffff);
 	font-family: 'Source code pro',monospace;
@@ -9,10 +10,14 @@ h2{
 	margin-bottom: 15px;
 }
 #intro{
-	min-height: 250px;
+	height: auto;
 	box-shadow:-1px -2px 20px 0px #0c0c0c,
 	 0px -1px 15px #0e0e0e;
 	border-radius: 5px;
+}
+.about-us{
+	height: auto;
+	flex-wrap: wrap;
 }
 .img-text{
 	flex-direction: row;
@@ -31,7 +36,7 @@ h2{
 .blazing-fire-img{
 	display: inline;
 	margin-bottom: 20px;
-	width: 250px;
+	max-width: 300px;
 	height: auto;
 	transition: ease-in;
 	margin: 20px;
@@ -104,9 +109,25 @@ section button:hover i{
 		height: auto;
 	}
 	.blazing-fire-img{
-		width: auto;
 		animation:none;
 		box-shadow: 1px -1px 0px 0px #0c0c0c,
 		 2px 14px 32px #0e0e0e;
+	}
+	.about-content{
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	.abt-img-2{
+		max-width: 310px;
+	}
+}
+@media screen and (max-width:800px){
+	.img-text{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.about-content{
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 }

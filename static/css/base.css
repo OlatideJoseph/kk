@@ -19,12 +19,15 @@ section:nth-child(1){
 }
 .nav-bar-mb{
 	display: none;
+	padding: none;
+	margin: 0;
 }
-.nav-bar-mb div:nth-child(1),
-div:nth-child(2),
-div:nth-child(3){
-    width:15px;
-    height: 10px;
+.bar-1,
+.bar-2,
+.bar-3{
+    width:45px;
+    height: 5px;
+    position: relative;
     display: block;
     background: var(--page-yellow);
     border-radius: 7px;
@@ -115,7 +118,7 @@ div:nth-child(3){
 	font-family: 'Source code pro',monospace;
 }
 @media screen and (max-width:480px){
-	.nav-content{
+	#nav-content{
 		display: none;
 	}
 	.nav-bar-mb{
