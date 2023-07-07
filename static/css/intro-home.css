@@ -1,3 +1,6 @@
+body{
+	overflow-x: hidden;
+}
 section{
 	font-size: 18px;
 	height: auto;
@@ -11,6 +14,8 @@ h2{
 }
 #intro{
 	height: auto;
+	background-color: #fff !important;
+	background-image: none;
 	box-shadow:-1px -2px 20px 0px #0c0c0c,
 	 0px -1px 15px #0e0e0e;
 	border-radius: 5px;
@@ -18,9 +23,12 @@ h2{
 .about-us{
 	height: auto;
 	flex-wrap: wrap;
+	background-color: #fff !important;
+	background-image: none;
+	border-radius: 5px;
 }
 .img-text{
-	flex-direction: row;
+	flex-direction: column;
 	align-items: flex-start;
 	flex-wrap: nowrap;
 	display: flex;
@@ -45,8 +53,8 @@ h2{
 	animation-iteration-count: infinite;
 	animation-name: blazing-image;*/
 	border-radius: 20px;
-	box-shadow:  -16px 16px 32px #0c0c0c,
-				 16px -16px 32px #0e0e0e;
+	box-shadow:  -1px 2px 32px #0c0c0c29,
+		 16px -16px 32px #0e0e0e47
 }
 .about-content{
 	display: flex;

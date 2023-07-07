@@ -8,7 +8,10 @@
     <section id="intro" class="intro">
        <center> <h2>Welcome Kapital Epicurean's</h2></center>
         <div class="img-text">
-            <img class=" blazing-fire-img" src="{% static 'images/blazing-fire-unsplash.jpg'%}" alt="blazing-fire">
+            <div class="first-img">
+                <img class=" blazing-fire-img" src="{% static 'images/blazing-fire-unsplash.jpg'%}" alt="blazing-fire">
+                <img src="{%static 'images/victoria-shes-unsplash.jpg'%}" class="blazing-fire-img" height="450" alt="victoria-shes-unsplash">
+            </div>
                 <p>
                 Welcome to Kapital Kitchen, where extraordinary dining experiences await. Discover a symphony of flavors with our carefully crafted menu, showcasing culinary excellence. Indulge in tantalizing creations made from the freshest, locally sourced ingredients. Immerse yourself in an inviting ambiance, perfect for any occasion. Our passionate team of chefs will take you on a culinary journey like no other. From the first bite to the last, our dedicated staff ensures impeccable service, making your visit truly memorable. Reserve your table now and savor the exceptional at Kapital Kitchen. Come, experience gastronomic delights beyond compare.
             </p>
@@ -46,8 +49,7 @@
 
            </p>
            <div class="about-images">
-                <img src="{%static 'images/victoria-shes-unsplash.jpg'%}" class="abt-img-1" height="450">
-                <img src="{% static 'images/fried-rice.jpg' %}" class="abt-img-2" height="450">   
+                <img class=" blazing-fire-img" src="{% static 'images/pixzolo-photography-ZB8NK8cB4EE-unsplash.jpg'%}" alt="pixolo-photo">   
            </div>    
        </div>
        
@@ -68,7 +70,18 @@
          *      arrow.style.display='none';
          *  });
         */
-        let scrollReveal=ScrollReveal();
-        scrollReveal.reveal('.intro');
+        // let scrollReveal=ScrollReveal();
+        // scrollReveal.reveal('.intro');
+        let observer= new IntersectionObserver(entries => {
+            entries.forEach(entry=>{
+                if (entry.isIntersecting){
+                    entry.target.classList.add('show');
+                }else{
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+        let sectImg=document.querySelectorAll('.firstimg img');
+        observer.observe(sectImg);
     </script>
 {% endblock %}
