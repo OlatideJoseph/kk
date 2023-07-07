@@ -9,10 +9,12 @@
        <center> <h2>Welcome Kapital Epicurean's</h2></center>
         <div class="img-text">
             <div class="first-img">
-                <img class=" blazing-fire-img" src="{% static 'images/blazing-fire-unsplash.jpg'%}" alt="blazing-fire">
-                <img src="{%static 'images/victoria-shes-unsplash.jpg'%}" class="blazing-fire-img" height="450" alt="victoria-shes-unsplash">
+                <img class=" blazing-fire-img blazing-fire" src="{% static 'images/blazing-fire-unsplash.jpg'%}" alt="blazing-fire">
+                <img src="{%static 'images/victoria-shes-unsplash.jpg'%}" class="blazing-fire-img blazing-fire-1" alt="victoria-shes-unsplash">
+                <img class=" blazing-fire-img blazing-fire-2" src="{% static 'images/jenn-kosar-jrWoDRmhwRY-unsplash.jpg'%}" alt="blazing-fire">
+                <img class=" blazing-fire-img blazing-fire-3" src="{% static 'images/jonathan-borba-Gkc_xM3VY34-unsplash.jpg'%}" alt="blazing-fire">
             </div>
-                <p>
+                <p class="intro-para">
                 Welcome to Kapital Kitchen, where extraordinary dining experiences await. Discover a symphony of flavors with our carefully crafted menu, showcasing culinary excellence. Indulge in tantalizing creations made from the freshest, locally sourced ingredients. Immerse yourself in an inviting ambiance, perfect for any occasion. Our passionate team of chefs will take you on a culinary journey like no other. From the first bite to the last, our dedicated staff ensures impeccable service, making your visit truly memorable. Reserve your table now and savor the exceptional at Kapital Kitchen. Come, experience gastronomic delights beyond compare.
             </p>
             <button type="button" class="e-btn">
@@ -72,7 +74,7 @@
         */
         // let scrollReveal=ScrollReveal();
         // scrollReveal.reveal('.intro');
-        let observer= new IntersectionObserver(entries => {
+        let observer= new IntersectionObserver((entries) => {
             entries.forEach(entry=>{
                 if (entry.isIntersecting){
                     entry.target.classList.add('show');
@@ -81,7 +83,13 @@
                 }
             });
         });
-        let sectImg=document.querySelectorAll('.firstimg img');
-        observer.observe(sectImg);
+        let para=document.querySelectorAll('p');
+        let sectImg=document.querySelectorAll('.blazing-fire-img');
+        para.forEach(e=>{
+            observer.observe(e);
+        });
+        sectImg.forEach(e=>{
+            observer.observe(e);
+        });
     </script>
 {% endblock %}

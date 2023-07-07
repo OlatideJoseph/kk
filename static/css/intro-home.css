@@ -38,15 +38,18 @@ h2{
 	justify-content: space-between;
 }
 /*paragraph*/
-.img-text p{
+.intro-para{
+	opacity: 0;
+	transform: translateX(-100px);
 	margin-top: 5px;
+	transition: transform 1500ms ease-out;
 }
 .blazing-fire-img{
 	display: inline;
 	margin-bottom: 20px;
 	max-width: 300px;
 	height: auto;
-	transition: ease-in;
+	transition:opacity .3s ease-in;
 	margin: 20px;
 	/*animation-delay: .8s;
 	animation-duration: 3s;
@@ -56,11 +59,40 @@ h2{
 	box-shadow:  -1px 2px 32px #0c0c0c29,
 		 16px -16px 32px #0e0e0e47
 }
+.first-img{
+	display: flex;
+	flex-direction: row;
+	padding-right: 15px;
+}
 .about-content{
 	display: flex;
 	flex-direction: row-reverse;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+}
+.blazing-fire{
+	opacity: 0.2;
+	transform: translateX(-100px);
+	transition: transform 800ms ease-in-out;
+}
+.blazing-fire-1{
+	opacity: 0.2;
+	transform: translateY(-100px);
+	transition: transform 1200ms ease-in-out;
+}
+.blazing-fire-2{
+	opacity: 0.2;
+	transform: translateY(-100px);
+	transition: transform 1400ms ease-in-out;
+}
+.blazing-fire-3{
+	opacity: 0.2;
+	transform: translateY(-100px);
+	transition: transform 1400ms ease-in-out;
+}
+.show{
+	opacity: 1;
+	transform: translate(0,0);
 }
 .abt-img-1{
 	border-radius: 10px;
@@ -118,6 +150,8 @@ section button:hover i{
 	}
 	.blazing-fire-img{
 		animation:none;
+		width: 150px;
+		height: 150px;
 		box-shadow: 1px -1px 0px 0px #0c0c0c,
 		 2px 14px 32px #0e0e0e;
 	}
@@ -127,6 +161,9 @@ section button:hover i{
 	}
 	.abt-img-2{
 		max-width: 310px;
+	}
+	.first-img{
+		flex-wrap: wrap;
 	}
 }
 @media screen and (max-width:800px){
