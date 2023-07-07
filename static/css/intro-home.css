@@ -11,6 +11,7 @@ section{
 h2{
 	border-bottom: 2px solid;
 	margin-bottom: 15px;
+	font-family:  'Source code pro',monospace;
 }
 #intro{
 	height: auto;
@@ -40,15 +41,23 @@ h2{
 /*paragraph*/
 .intro-para{
 	opacity: 0;
+	display: inline;
 	transform: translateX(-100px);
+	margin-top: 5px;
+	transition: transform 1500ms ease-out;
+}
+.abt-para{
+	opacity: 0;
+	transform: translateX(100px);
 	margin-top: 5px;
 	transition: transform 1500ms ease-out;
 }
 .blazing-fire-img{
 	display: inline;
 	margin-bottom: 20px;
-	max-width: 300px;
+	max-width: 250px;
 	height: auto;
+	max-height: 350px;
 	transition:opacity .3s ease-in;
 	margin: 20px;
 	/*animation-delay: .8s;
@@ -61,6 +70,7 @@ h2{
 }
 .first-img{
 	display: flex;
+	width: auto;
 	flex-direction: row;
 	padding-right: 15px;
 }
@@ -83,22 +93,28 @@ h2{
 .blazing-fire-2{
 	opacity: 0.2;
 	transform: translateY(-100px);
-	transition: transform 1400ms ease-in-out;
+	transition: transform 1450ms ease-in-out;
 }
 .blazing-fire-3{
 	opacity: 0.2;
-	transform: translateY(-100px);
-	transition: transform 1400ms ease-in-out;
+	transform: translateX(100px);
+	transition: transform 1600ms ease-in-out;
+}
+.e-btn{
+	display: inline;
+}
+.abt-img-1{
+	border-radius: 10px;
+	opacity: 0;
+	transform: translateX(-100px);
+	transition:opacity 200ms ease, transform 800ms ease-in-out;
+}
+.abt-img-2{
+	border-radius: 10px;
 }
 .show{
 	opacity: 1;
 	transform: translate(0,0);
-}
-.abt-img-1{
-	border-radius: 10px;
-}
-.abt-img-2{
-	border-radius: 10px;
 }
 section button{
 	padding: 15px;
@@ -171,8 +187,16 @@ section button:hover i{
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
+	.first-img{
+		flex-wrap: wrap;
+	}
 	.about-content{
 		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width:1200px){
+	.first-img{
 		flex-wrap: wrap;
 	}
 }
