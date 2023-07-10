@@ -33,6 +33,17 @@ section:nth-child(1){
     border-radius: 7px;
     margin: 5px;
 }
+.bar-1.click{
+	transform: rotate(45deg) translateY(10px) translateX(7px);
+}
+.bar-2.click{
+	display: none;
+	transition: display .3s ease;
+
+}
+.bar-3{
+	transform: rotate(-45deg) translateX(-3px);
+}
 .base-nav{
 	background: var(--page-red);
 	color: white;
@@ -152,5 +163,8 @@ section:nth-child(1){
 	}
 	.base-nav{
 		margin-right: 10px;
+	}
+	.page-footer{
+		font-size: 20%;
 	}
 }
